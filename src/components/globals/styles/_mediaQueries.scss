@@ -1,0 +1,25 @@
+// Media Queries
+
+$min: $min-content-width;
+$max: $max-content-width;
+
+$small: $mobile-breakpoint;
+$medium: $tablet-breakpoint;
+$large: $desktop-breakpoint;
+
+
+@mixin mediaQuery($size) {
+	@if $size == small {
+		@media only screen and (min-width: $small) { @content; }
+	}
+	@else if $size == medium {
+		@media only screen and (min-width: $medium) { @content; }
+	}
+	@else if $size == large {
+		@media only screen and (min-width: $large) { @content; }
+	}
+
+	@else if $size == content {
+		@media only screen and (min-width: $max) { @content; }
+	}	
+}

@@ -1,0 +1,9 @@
+// Custom SASS mixins
+// Define the custom mixins for your project here.
+
+/* CONVERT PIXELS TO EM */
+
+@function em($pixels, $context: $base-font-size) {
+  @return #{$pixels/$context}em
+}
+

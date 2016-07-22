@@ -1,0 +1,16 @@
+/* This is the site config file. Add your required component to the defaultComponents array:
+
+	"defaultComponents" : [
+		"component1",
+		"component2"
+    ]
+
+   Add as many components as needed.
+
+*/
+
+{
+    "defaultComponents" : [
+    ],
+    "debug": true
+}

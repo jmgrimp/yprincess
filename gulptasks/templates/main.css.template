@@ -1,0 +1,10 @@
+/**
+*
+* This file was generated. To edit the contents edit the
+* primary config.json file.
+*
+*/
+
+{{#each components}}
+    @import '../components/{{this.name}}/styles/{{this.name}}';
+{{/each}}

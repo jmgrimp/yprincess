@@ -1,0 +1,17 @@
+/**
+ *  This is the main file for {{component_name}}
+ */
+
+var React   = require( 'react' );
+
+
+var {{component_name}} = React.createClass({
+  render: function() {
+    return (
+      <div>Hello, world!</div>
+    );
+  }
+});
+
+
+module.exports = {{component_name}};

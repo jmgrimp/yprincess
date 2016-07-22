@@ -1,0 +1,232 @@
+/**
+ *  Main css for test
+ */
+
+
+.yp-leaderboard {
+	h2 {
+	    font-size: 1.5em;
+	    font-weight: bold;
+	    border-bottom: 1px solid;
+	    padding: 0 0 10px;
+	    margin: 0 0 10px;
+	    position: relative;
+	    min-height: 50px;
+	    span {
+			width: 100%;
+		    display: inline-block;
+		    text-align: center;
+	    	@include mediaQuery(small) {
+				width: 50%;
+			    display: inline-block;
+			    text-align: left;
+		    }
+	    }
+	}
+	&__content {
+	    margin: 20px 0;
+	    border: 1px solid #666;
+	    border-radius: 10px;
+	    overflow: hidden;
+	    background: #ccc;
+	    h3 {
+		    padding: 10px;
+		    font-size: 1.1em;
+    		font-weight: bold;
+		}
+	}
+	.reset-button {
+	    position: relative;
+	    display: inline-block;
+	    vertical-align: middle;
+	    width: 100%;
+	    text-align: center;
+	    margin: 10px 0;
+	    @include mediaQuery(small) {
+			width: 20%;
+	    	text-align: right;
+	    	margin: 0;
+	    }
+    }
+    a {
+	    text-decoration: none;
+	    border: 1px solid rgba(0,0,0,.6);
+	    border-radius: 5px;
+	    background: #CDD9E8;
+	    color: #000;
+	    text-decoration: initial;
+	    margin: 10px 0 0;
+	    padding: 3px 10px;
+		font-size: .6em;
+		font-weight: normal;
+		box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+	    transition: background 200ms, color 200ms;
+	    &:hover {
+	    	background: #666;
+	    	color: #fff;
+	    }
+	}
+	.scoring-table {
+		width: 100%;
+	    overflow: hidden;
+	    padding: 0;
+	    position: relative;
+	    background: #ccc;
+
+	    &__panel {
+		    width: 100%;
+		    background: #fff;
+		    border-top: 1px solid #000;
+
+		    h4 {
+		    	padding: 10px;
+		    	background: $light-blue;
+		    }
+		}
+	}
+
+	.select-tribe {
+	    position: relative;
+	    display: inline-block;
+	    width: 100%;
+	    text-align: center;
+	    margin: 10px 0;
+	    @include mediaQuery(small) {
+			width: 30%;
+	    	text-align: right;
+	    	margin: 0;
+	    }
+	    select.selectTribe {
+		    padding: 10px 10px;
+		    -webkit-appearance: none;
+		    cursor: pointer;
+			font-size: 0.6em;
+			box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+			background: #CDD9E8;
+		}
+	}
+
+
+	.panel-content {
+		max-height: 300px;
+		overflow-y: scroll;
+	    width: 90%;
+	    margin: 0 auto;
+
+		@include mediaQuery(small) {
+			max-height: 200px;
+		    width: initial;
+		    margin: auto;
+		}
+		&__table {
+    		margin-top: 10px;
+			@include mediaQuery(small) {
+				margin-top: 40px;
+			}
+			&__head {
+				font-weight: bold;
+			    position: absolute;
+			    width: 100%;
+			    color: rgba(255,255,255,1);
+			    background: $base-blue;
+			    display: none;
+			    @include mediaQuery(small) {
+					display: block;
+			    }
+			    span{
+			    	color: inherit;
+			    }
+			}
+			&__body {
+				border: 1px solid;
+			    margin: 0 0 10px;
+			    border-radius: 5px;
+			    overflow: hidden;
+			    @include mediaQuery(small) {
+					border: 0;
+				    margin: 0;
+				    border-radius: 0;
+				    overflow: visible;
+			    }
+				&:nth-child(even){
+			    	background-color: #efefef;
+			    }
+			}
+
+			&__head > li,
+			&__body {
+	    		display: block;
+				@include mediaQuery(small) {
+					display: flex;
+				}
+				span {
+				    padding: 10px 5px;
+				    width: 33%;
+				    display: inline-block;
+					@include mediaQuery(small) {
+						width: 20%;
+						display: initial;
+
+						&:nth-child(-n+2){
+							width: 25%;
+						}
+						&.panel-content__score,
+						&.panel-content__bullseyes {
+							width: 15%;
+						}
+					}
+				}
+			}
+			&__body {
+				&--empty{
+			    	border: none;
+			    	padding: 10px;
+					&.empty-event {
+				    	width: 100%;
+				    	background: none;
+				    	color: initial;
+				    }
+			    }
+
+		    	span {
+					&:nth-child(-n+2){
+				    	width: 50%;
+				    	background: $base-blue;
+						@include mediaQuery(small) {
+							width: 25%;
+					    	background: none;
+						}
+					}
+				    &:first-child {
+				    	text-align: left;
+				    	padding-left: 10px;
+				    	color: rgba(255,255,255,1);
+				    	@include mediaQuery(small) {
+					    	padding-left: 30px;
+					    	color: initial;
+				    	}
+				    }
+				    &:nth-child(2) {
+				    	text-align: right;
+				    	padding-right: 10px;
+				    	color: rgba(255,255,255,0.7);
+				    	@include mediaQuery(small) {
+					    	text-align: initial;
+					    	padding-right: initial;
+					    	color: initial;
+				    	}
+				    }
+				}
+	    	}
+
+	    	&__head > li {
+				&:first-child {
+					padding-left: 30px;
+				}
+	    	}
+	    }
+	    &__center {
+	    	text-align: center;
+	    }
+	}
+}

@@ -1,0 +1,8 @@
+var React = require('react');
+var Navigation = require('./components/globals/navigation');
+var Home = require('./components/home/home');
+
+
+$.ajaxSetup({ 
+	cache: false
+});

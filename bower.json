@@ -1,0 +1,19 @@
+{
+  "name": "SITE",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.4.0",
+    "bootstrap-sass": "~3.3.5",
+    "jquery": "latest"
+  },
+  "devDependencies": {
+  }
+}

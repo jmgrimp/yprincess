@@ -1,0 +1,64 @@
+/**
+ *  Main css for weather
+ */
+
+#weather-box {
+
+	margin-left: auto;
+
+	.weather-box {
+
+	    background: rgba(255,255,255,0.3);
+	    border: 2px solid rgba(255,255,255,0.8);
+	    border-radius: 5px;
+	    display: block;
+	    font-size: 0.8em;
+	    padding: 5px 15px;
+	    position: relative;
+
+	    &__select {
+	    	display: none;
+	    	left: 0;
+	    	position: absolute;
+	    	top: 0;
+
+	    	&.weather-active {
+	    		display: block;
+	    	}
+	    }
+
+	    &__title {
+
+	    	font-weight: bold;
+    		padding: 3px 6px;
+    		color: rgba(255,255,255,1);
+    		letter-spacing: 2px;
+
+	    }
+
+	    &__temp {
+
+	    	visibility: hidden;
+	    	transition: visibility 0.7s ease-in-out;
+	    	display: flex;
+    		margin: 0 auto;
+			span {
+			    flex-grow: 1;
+		        text-align: center;
+			    font-size: 2em;
+			    font-weight: bold;
+			    padding: 0px 4px;
+			    color: #fff;
+			    text-shadow: 0px 1px 4px rgba(16, 64, 128, 1);
+			}
+	    	&.active {
+
+				visibility: visible;
+
+			}
+	    }
+	}
+
+
+
+}

@@ -1,0 +1,31 @@
+{
+    'ecmaFeatures': {
+        'blockBindings': true,
+        'forOf': true,
+        'jsx': true,
+        'modules': true
+    },
+    'rules': {
+        'semi': [2, 'always'],
+        'quotes': [1, 'single'],
+        'no-multi-spaces' : 0,
+        'camelcase': 0,
+        'key-spacing': 0,
+        'no-trailing-spaces' : 0,
+        'vars-on-top' : 1,
+        'no-unused-vars': 1,
+        'no-mixed-spaces-and-tabs': 0,
+        'new-cap' : 1,
+        'constructor-super': 0,
+        'no-reserved-keys': 0
+    },
+    'globals' : {
+        'jQuery':false,
+        '$':true
+    },
+    'env': {
+        'browser':true,
+        'node': true,
+        'es6': true
+    }
+}

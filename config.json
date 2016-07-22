@@ -1,0 +1,11 @@
+{
+    "defaultComponents" : [
+        "globals",
+        "home",
+        "tribe",
+        "navigation",
+        "weather",
+        "modal"
+    ],
+    "debug": true
+}
